@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material'
+import { Box } from '@mui/material'
+// import img from '../../../public/images/cliqhr-logo.png'
 import "./Header.css";
 
 export default function Header() {
@@ -16,7 +17,14 @@ export default function Header() {
                     </Box>
                 </Box>
                 <Box className='right-header'>
-                    <Box></Box>
+                    <Box className='flex'>
+                        <Box className='title-img-1'>
+                            <img src='/images/cliqhr-logo.png' alt='' />
+                        </Box>
+                        <Box className='title-img-2'>
+                            <img src='/images/GTS-image.png' alt='' />
+                        </Box>
+                    </Box>
                 </Box>
             </Box>
         </Box>

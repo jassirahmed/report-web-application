@@ -5,10 +5,11 @@
 }
 
 .hero-section {
-  height: 520px;
+  height: 524px;
   width: 100%;
   background-image: url("/public/images/heroImg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #E9EBF3;
 }

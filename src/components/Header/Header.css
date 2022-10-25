@@ -4,6 +4,7 @@
 
 .header-flex {
     display: flex;
+    justify-content: space-between;
     padding: 50px;
 }
 
@@ -28,4 +29,21 @@
     width: 125px;
     height: 8px;
     background-color: #1D4294;
+}
+
+.title-img-1 {
+    padding-right: 20px;
+    border-right: 2px solid #130D3C;
+    width: 130px;
+}
+
+.title-img-2 {
+    padding-left: 20px;
+    width: 120px;
+}
+
+.title-img-2 img,
+.title-img-1 img {
+    width: 100%;
+    height: 100%;
 }

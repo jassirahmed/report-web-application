@@ -20,3 +20,8 @@ body {
 .hero-small-text {
   font-size: 25px;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+}
