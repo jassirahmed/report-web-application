@@ -12,7 +12,7 @@ export default function Profile() {
             className='profile-card flex'
             sx={{
                 backgroundColor: '#E9EBF3',
-                padding: '0px 30px'
+                padding: '0px 40px'
             }}>
             <Box sx={{ width: '25%' }}>
                 <Box
