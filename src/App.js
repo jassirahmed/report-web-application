@@ -2,8 +2,11 @@ import Header from './components/Header';
 import Profile from './components/profile/Profile';
 import DetailCard from './components/Interview/DetailCard';
 import FeedBackCard from './components/FeedBack/FeedBackCard';
+import CandidateChart from './components/Charts/CandidateChart';
+import SkillsAnalysis from './components/SkillsAnalysis/SkillsAnalysis';
 import { Box } from '@mui/material';
 import './App.css';
+
 function App() {
   return (
     <Box className="App">
@@ -13,6 +16,8 @@ function App() {
       <Profile />
       <DetailCard />
       <FeedBackCard />
+      {/* <CandidateChart /> */}
+      <SkillsAnalysis />
     </Box>
   );
 }

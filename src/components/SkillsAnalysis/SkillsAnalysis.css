@@ -1,0 +1,30 @@
+.input-range__slider-container {
+    display: none;
+}
+
+.slider1 .input-range__track--active {
+    background: linear-gradient(90deg, #FF5DA1 0%, #344CB6 100%);
+}
+
+.slider1 .input-range__track--background {
+    left: 0px;
+    margin-top: -0.15rem;
+    position: absolute;
+    right: 40px;
+    top: 50%;
+}
+
+.slider1 .input-range__label--max {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    color: #130D3C;
+}
+
+.slider .input-range__label--max .input-range__label-container {
+    right: 0;
+}
+
+.slider1 .input-range__label--min {
+    display: none;
+}
