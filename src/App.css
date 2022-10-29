@@ -14,28 +14,3 @@
   background-repeat: no-repeat;
   background-color: #E9EBF3;
 }
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  .rangeInp {
-    overflow: hidden;
-    width: 80px;
-    -webkit-appearance: none;
-    background-color: green;
-  }
-
-  .rangeInp::-webkit-slider-runnable-track {
-    height: 10px;
-    -webkit-appearance: none;
-    color: #13bba4;
-    margin-top: -1px;
-  }
-
-  .rangeInp::-webkit-slider-thumb {
-    width: 10px;
-    -webkit-appearance: none;
-    height: 10px;
-    background: #434343;
-    box-shadow: -80px 0 0 80px #43e5f7;
-  }
-
-}
