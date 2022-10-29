@@ -1,3 +1,7 @@
+.slider1 .input-range {
+    width: 90%;
+}
+
 .input-range__slider-container {
     display: none;
 }
@@ -10,7 +14,6 @@
     left: 0px;
     margin-top: -0.15rem;
     position: absolute;
-    right: 40px;
     top: 50%;
 }
 
@@ -19,6 +22,7 @@
     bottom: 0;
     position: absolute;
     color: #130D3C;
+    display: none;
 }
 
 .slider .input-range__label--max .input-range__label-container {
@@ -27,4 +31,13 @@
 
 .slider1 .input-range__label--min {
     display: none;
+}
+
+.slider1 .input-range__label-container {
+    left: 0%;
+    position: relative;
+}
+
+.slider1 .input-range__label--max .input-range__label-container {
+    left: 0;
 }
