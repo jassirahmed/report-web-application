@@ -43,10 +43,11 @@ const TechnicalSkills = [
 ]
 
 export default function TechSkillsCard() {
+    const handleChange = () => { }
     return (
         <Box className='flex' sx={{ pt: '20px', flexDirection: 'row', gap: '25px', flexWrap: 'wrap' }}>
             {TechnicalSkills.map((item, i) => (
-                <Box sx={{ width: '32%', }}>
+                <Box key={i} sx={{ width: '32%', }}>
                     <Box sx={{
                         bgcolor: '#FFFFFF',
                         p: '20px 20px',
@@ -61,6 +62,7 @@ export default function TechSkillsCard() {
                                     value={item.value}
                                     formatLabel={value => `${value}%`}
                                     allowSameValues={true}
+                                    onChange={handleChange}
                                 />
                                 <Box
                                     sx={{

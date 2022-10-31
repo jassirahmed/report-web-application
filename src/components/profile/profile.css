@@ -1,6 +1,6 @@
 .profile-img {
     background-image: url('https://static.jobscan.co/blog/uploads/hickman-testimonial-1.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 }

@@ -1,6 +1,5 @@
 import React from 'react'
-import { Box, Grid } from '@mui/material'
-import InputRange from 'react-input-range'
+import { Box } from '@mui/material'
 import BetterThanIcon from '../Icons/BetterThanIcon'
 import "./SkillsAnalysis.css"
 import TechSkillsCard from './TechSkillsCard'

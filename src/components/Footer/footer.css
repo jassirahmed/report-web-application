@@ -2,9 +2,9 @@
     background-image: url(/public/images/Footer.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 250px;
+    background-size: 100% 100%;
+    min-width: 100%;
+    min-height: 250px;
 }
 
 .end-report {
