@@ -5,6 +5,7 @@ import FeedBackCard from './components/FeedBack/FeedBackCard';
 import CandidateChart from './components/Charts/CandidateChart';
 import SkillsAnalysis from './components/SkillsAnalysis/SkillsAnalysis';
 import Questions from './components/Questions/Questions';
+import Footer from './components/Footer/Footer';
 import { Box } from '@mui/material';
 import './App.css';
 
@@ -20,7 +21,8 @@ function App() {
       {/* <CandidateChart /> */}
       <SkillsAnalysis />
       <Questions />
-    </Box>
+      <Footer />
+    </Box >
   );
 }
 

@@ -53,7 +53,7 @@ export default function Profile() {
                 }}>7 Years of experience</Box>
             </Box>
             <Box sx={{ width: "75%", padding: '20px 0px 20px 20px', alignItems: 'start' }} className='flex'>
-                <Box sx={{ width: '25%', textAlign: 'left', padding: '20px' }}>
+                <Box sx={{ width: '30%', textAlign: 'left', padding: '20px' }}>
                     <Box sx={{ padding: '20px', height: '180px', backgroundColor: '#FFFFFF', borderRadius: '25px' }}>
                         <Box><ScoreIcon /></Box>
                         <Box sx={{ color: '#130D3C', fontSize: '16px', padding: '10px 0px' }} >Score</Box>
@@ -61,14 +61,14 @@ export default function Profile() {
                         <Box>VERY GOOD</Box>
                     </Box>
                 </Box>
-                <Box sx={{ width: '25%', textAlign: 'left', padding: '20px' }}>
+                <Box sx={{ width: '30%', textAlign: 'left', padding: '20px' }}>
                     <Box sx={{ padding: '20px', height: '180px', backgroundColor: '#FFFFFF', borderRadius: '25px' }}>
                         <Box><RankIcon /></Box>
                         <Box sx={{ color: '#130D3C', fontSize: '16px', padding: '10px 0px' }}>Rank</Box>
                         <Box sx={{ color: '#FF5DA1', fontSize: '20px', fontWeight: 700 }}>1</Box>
                     </Box>
                 </Box>
-                <Box sx={{ width: '25%', textAlign: 'left', padding: '20px' }}>
+                <Box sx={{ width: '30%', textAlign: 'left', padding: '20px' }}>
                     <Box sx={{ padding: '20px', height: '180px', backgroundColor: '#FFFFFF', borderRadius: '25px' }}>
                         <Box><HeartIcon /></Box>
                         <Box sx={{ color: '#130D3C', fontSize: '16px', padding: '10px 0px' }} >Recommendation</Box>
@@ -76,7 +76,7 @@ export default function Profile() {
                         <Box sx={{ color: '#777FAE', fontSize: '10px' }}>Strong Reject, Reject,<br /> Hire, Strong Hire</Box>
                     </Box>
                 </Box>
-                <Box sx={{ width: '25%', textAlign: 'left', padding: '20px' }}>
+                <Box sx={{ width: '30%', textAlign: 'left', padding: '20px' }}>
                     <Box sx={{ padding: '20px', height: '180px', backgroundColor: '#FFFFFF', borderRadius: '25px' }}>
                         <Box><BetterThanIcon /></Box>
                         <Box sx={{ color: '#130D3C', fontSize: '16px', padding: '10px 0px' }} >Better Than</Box>
