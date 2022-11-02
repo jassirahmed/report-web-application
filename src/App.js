@@ -2,7 +2,9 @@ import Header from './components/Header';
 import Profile from './components/profile/Profile';
 import DetailCard from './components/Interview/DetailCard';
 import FeedBackCard from './components/FeedBack/FeedBackCard';
+import ComparisonCandidate from './components/Comparison/ComparisonCandidate';
 import CandidateChart from './components/Charts/CandidateChart';
+import ScoreAnalysis from './components/ScoreAnalysis/ScoreAnalysis';
 import SkillsAnalysis from './components/SkillsAnalysis/SkillsAnalysis';
 import Questions from './components/Questions/Questions';
 import Footer from './components/Footer/Footer';
@@ -19,6 +21,8 @@ function App() {
       <DetailCard />
       <FeedBackCard />
       {/* <CandidateChart /> */}
+      <ComparisonCandidate />
+      <ScoreAnalysis />
       <SkillsAnalysis />
       <Questions />
       <Footer />

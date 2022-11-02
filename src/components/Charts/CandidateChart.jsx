@@ -1,66 +1,57 @@
 import React from 'react'
 import { Box } from '@mui/material'
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList } from 'recharts'
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList, } from 'recharts'
 
 const data = [
     {
         name: '1/10',
-        uv: 4000,
-        pv: 2400,
+        uv: 5,
         amt: 2400,
+        xStroke: 'red'
     },
     {
         name: '2/10',
-        uv: 3000,
-        pv: 1398,
+        uv: 7,
         amt: 2210,
     },
     {
         name: '3/10',
-        uv: 2000,
-        pv: 9800,
+        uv: 12,
         amt: 2290,
     },
     {
         name: '4/10',
-        uv: 2780,
-        pv: 3908,
+        uv: 27,
         amt: 2000,
     },
     {
         name: '5/10',
-        uv: 1890,
-        pv: 4800,
+        uv: 20,
         amt: 2181,
     },
     {
         name: '6/10',
-        uv: 2390,
-        pv: 3800,
+        uv: 18,
         amt: 2500,
     },
     {
         name: '7/10',
-        uv: 3490,
-        pv: 4300,
+        uv: 16,
         amt: 2100,
     },
     {
         name: '8/10',
-        uv: 3490,
-        pv: 4300,
+        uv: 5,
         amt: 2100,
     },
     {
         name: '9/10',
-        uv: 3490,
-        pv: 4300,
+        uv: 1,
         amt: 2100,
     },
     {
         name: '10/10',
-        uv: 3490,
-        pv: 4300,
+        uv: 0,
         amt: 2100,
     },
 ];
@@ -68,7 +59,7 @@ export default function CandidateChart() {
     return (
         <Box>
             <BarChart
-                width={500}
+                width={600}
                 height={300}
                 data={data}
                 margin={{
@@ -78,14 +69,11 @@ export default function CandidateChart() {
                     bottom: 5,
                 }}
             >
-                <CartesianGrid strokeDasharray="3 3" />
+                <CartesianGrid strokeOpacity="1" vertical={false} />
                 <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="uv" fill="#82ca9d" radius={8} >
-                    <LabelList dataKey='name'></LabelList>
-                </Bar>
+                <YAxis type='number' domain={[0, 30]} />
+                <Tooltip cursor={{ fill: 'transparent' }} />
+                <Bar dataKey="uv" fill="#CED2E6" barSize={30} radius={8} isAnimationActive={false} />
             </BarChart>
         </Box>
     )
