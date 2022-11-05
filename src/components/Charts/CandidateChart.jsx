@@ -9,7 +9,7 @@ import {
   CartesianGrid,
   Tooltip,
   Legend,
-  LabelList,
+  Label,
 } from "recharts";
 
 const data = [
@@ -70,26 +70,37 @@ export default function CandidateChart() {
     <Box>
       <BarChart
         width={600}
-        height={300}
+        height={400}
         data={data}
         margin={{
           top: 5,
           right: 30,
-          left: 20,
-          bottom: 5,
+          left: 10,
+          bottom: 20,
         }}
       >
         <CartesianGrid strokeOpacity="1" vertical={false} />
-        <XAxis dataKey="name" />
-        <YAxis type="number" domain={[0, 30]} />
+        <XAxis dataKey="name">
+          <Label
+            value="Ratings out of 10 it's % of Candidates"
+            offset={-10}
+            position="insideBottom"
+            fill="#777FAE"
+          />
+        </XAxis>
+        <YAxis
+          type="number"
+          domain={[0, 30]}
+          label={{
+            value: "Candidate count (%)",
+            angle: -90,
+            position: "center",
+            fill: "#777FAE",
+            textAnchor: "middle",
+            offset: -10,
+          }}
+        />
         <Tooltip cursor={{ fill: "transparent" }} />
-        {/* <Bar
-          dataKey="uv"
-          fill="#CED2E6"
-          barSize={30}
-          radius={8}
-          isAnimationActive={false}
-        /> */}
         <Bar dataKey="uv" radius={8} isAnimationActive={false}>
           {data.map((entry, index) => (
             <Cell

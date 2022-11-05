@@ -1,6 +1,6 @@
 import { Box, Card, Typography } from "@mui/material";
 import React from "react";
-
+import CandidateChart from "../Charts/CandidateChart";
 export default function Stats() {
   const StatsData = [
     {
@@ -28,24 +28,14 @@ export default function Stats() {
         <Box as={"h1"} fontSize={"45px"} fontWeight={"800"} color={"#130D3C"}>
           Comparision With Other Candidate
         </Box>
-        <Box display={"flex"} width={"100%"}>
-          <Box
-            width={"50%"}
-            bgcolor={"#fff"}
-            border={"1px solid black"}
-            p={"15px"}
-          >
-            This section is for Bar-Chart......
+        <Box display={"flex"} alignItems="center" width={"100%"}>
+          <Box width={"50%"} bgcolor={"#fff"} p={"15px"}>
+            <CandidateChart />
           </Box>
           <Box width={"50%"} bgcolor={"#ffffff"}>
-            <Box
-              display={"flex"}
-              alignItems={"center"}
-              //   justifyContent={"center"}
-            >
+            <Box display={"flex"} alignItems={"center"}>
               {StatsData.map((item, i) => (
                 <Box
-                  boxShadow={"0px 0px 4px #c7c0c0"}
                   p={"15px"}
                   key={i}
                   m={"0px 10px"}
