@@ -2,7 +2,6 @@ import Header from "./components/Header";
 import Profile from "./components/profile/Profile";
 import DetailCard from "./components/Interview/DetailCard";
 import FeedBackCard from "./components/FeedBack/FeedBackCard";
-import ComparisonCandidate from "./components/Comparison/ComparisonCandidate";
 import Stats from "./components/ChartSection/Stats";
 import ScoreAnalysis from "./components/ScoreAnalysis/ScoreAnalysis";
 import SkillsAnalysis from "./components/SkillsAnalysis/SkillsAnalysis";
