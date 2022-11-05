@@ -37,10 +37,11 @@ const SoftSkills = [
 ]
 
 export default function SoftSkillsCard() {
+    const handleChange = () => { }
     return (
         <Box className='flex' sx={{ pt: '20px', flexDirection: 'row', gap: '25px', flexWrap: 'wrap' }}>
             {SoftSkills.map((item, i) => (
-                <Box sx={{ width: '32%', }}>
+                <Box key={i} sx={{ width: '32%', }}>
                     <Box sx={{
                         bgcolor: '#FFFFFF',
                         p: '20px 20px',
@@ -55,6 +56,7 @@ export default function SoftSkillsCard() {
                                     value={item.value}
                                     formatLabel={value => `${value}%`}
                                     allowSameValues={true}
+                                    onChange={handleChange}
                                 />
                                 <Box
                                     sx={{

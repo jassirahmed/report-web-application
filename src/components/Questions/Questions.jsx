@@ -113,7 +113,7 @@ public class GG {
         }
     ]
     return (
-        <Box p='40px'>
+        <Box p='40px' pb='0px'>
             <Box fontSize='40px' fontWeight='700' textAlign='left' color='#130D3C'>Questions</Box>
             {QuesitonAnswers.map((item, i) => (
                 <Box key={i} pb='20px'>
