@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState, UseEffect } from 'react'
 import { Box } from '@mui/material'
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList, } from 'recharts'
+import { useEffect } from 'react';
 
 const data = [
     {
@@ -56,6 +57,7 @@ const data = [
     },
 ];
 export default function CandidateChart() {
+    console.log(data, 'data');
     return (
         <Box>
             <BarChart
@@ -73,7 +75,11 @@ export default function CandidateChart() {
                 <XAxis dataKey="name" />
                 <YAxis type='number' domain={[0, 30]} />
                 <Tooltip cursor={{ fill: 'transparent' }} />
-                <Bar dataKey="uv" fill="#CED2E6" barSize={30} radius={8} isAnimationActive={false} />
+                <Bar dataKey="uv" radius={8} isAnimationActive={false} >
+                    {data.map((entry, index) => {
+                        <Cell key={`cell-${index}`} fill={index === 4 ? 'red' : "#CED2E6"} />
+                    })}
+                </Bar>
             </BarChart>
         </Box>
     )

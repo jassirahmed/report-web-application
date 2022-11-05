@@ -20,7 +20,7 @@ function App() {
       <Profile />
       <DetailCard />
       <FeedBackCard />
-      {/* <CandidateChart /> */}
+      <CandidateChart />
       <ComparisonCandidate />
       <ScoreAnalysis />
       <SkillsAnalysis />
