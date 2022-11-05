@@ -1,8 +1,8 @@
 .score-analysis {
-    background-image: url(/public/images/score-analysis-bg-img.png);
+    background-image: url(/public/images/score-analysis-bg-img.png),
+        linear-gradient(0deg, #E9EBF3 38%, #FFFFFF 38%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     min-width: 100%;
-    /* min-height: 500px; */
 }

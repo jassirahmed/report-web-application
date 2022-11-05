@@ -35,7 +35,7 @@ export default function ScoreAnalysis() {
     return (
         <Box className='score-analysis'>
             <Box p='100px 40px'>
-                <Box className='flex' justifyContent='space-between'>
+                <Box className='flex' >
                     <Box width='30%' textAlign='left' color='#FFFFFF'>
                         <Box fontSize='40px' fontWeight='700' pb='25px'>Score Analysis</Box>
                         <Box width='300px' display='flex' flexWrap='wrap' fontSize='20px' fontWeight='500' lineHeight='40px' >
@@ -46,30 +46,36 @@ export default function ScoreAnalysis() {
                             of the allotted time
                         </Box>
                     </Box>
-                    <Box className='flex'>
-                        <Box width='50%'>
-                            <Doughnut
-                                data={data}
-                                height='50%'
-                                width='50%'
-                                options={{
-                                    plugins: {
-                                        legend: {
-                                            display: false
-                                        },
-                                        tooltip: {
-                                            enabled: false
-                                        }
-                                    },
-                                    rotation: -90,
-                                    circumference: 180,
-                                    cutout: "60%",
-                                    maintainAspectRatio: true,
-                                    responsive: true
-                                }}
-                            />
+                    <Box className='flex' width='70%' alignItems='flex-end'>
+                        <Box width='70%'>
+                            <Box width='300px' m='0 auto'>
+                                <img src="/images/HalfDoughnut.png" alt=""
+                                    style={{ width: '100%', height: '100%' }}
+                                />
+                            </Box>
                         </Box>
-                        <Box width='50%'></Box>
+                        <Box width='30%'>
+                            <Box className='flex' py='15px'>
+                                <Box width='20px' height='20px' bgcolor='#000' border='6px solid #FF5765' mr='15px'>
+                                </Box>
+                                <Box color='#FFFFFF' fontSize='14px'>Beginner ( 0 % - 25 % )</Box>
+                            </Box>
+                            <Box className='flex' py='15px'>
+                                <Box width='20px' height='20px' bgcolor='#000' border='6px solid #FEA303' mr='15px'>
+                                </Box>
+                                <Box color='#FFFFFF' fontSize='14px'>Intermediate ( 26 % - 50 % )</Box>
+                            </Box>
+                            <Box className='flex' py='15px'>
+                                <Box width='20px' height='20px' bgcolor='#000' border='6px solid #00dff6' mr='15px'>
+                                </Box>
+                                <Box color='#FFFFFF' fontSize='14px'>Experienced ( 51 % - 75 %)</Box>
+                            </Box>
+                            <Box className='flex' pt='15px'>
+                                <Box width='20px' height='20px' bgcolor='#000' border='6px solid #00B5A2' mr='15px'>
+                                </Box>
+                                <Box color='#FFFFFF' fontSize='14px'>Proficient ( 76 % - 100 % )</Box>
+                            </Box>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
