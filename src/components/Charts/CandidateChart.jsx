@@ -104,7 +104,7 @@ export default function CandidateChart() {
                     {data.map((entry, index) => (
                         <Cell
                             key={`cell-${index}`}
-                            fill={index === 7 ? "red" : "#CED2E6"}
+                            fill={index === 7 ? "#C55FFC" : "#CED2E6"}
                         />
                     ))}
                 </Bar>
