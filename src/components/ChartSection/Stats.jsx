@@ -1,7 +1,7 @@
 import { Box, Card, Typography } from "@mui/material";
 import CandidateChart from "../Charts/CandidateChart";
 import React from "react";
-import CandidateChart from "../Charts/CandidateChart";
+// import CandidateChart from "../Charts/CandidateChart";
 export default function Stats() {
   const StatsData = [
     {
