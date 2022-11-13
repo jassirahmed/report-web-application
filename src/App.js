@@ -18,11 +18,11 @@ function App() {
   const inputRef = useRef(null);
   const printDocument = () => {
     html2canvas(inputRef.current).then((canvas) => {
-      const imgWidth = 208;
-      const pageHeight = 295;
+      const imgWidth = 210;
+      const pageHeight = 300;
       const imgHeight = (canvas.height * imgWidth) / canvas.width;
       let heightLeft = imgHeight;
-      let position = 0;
+      let position = 10;
       heightLeft -= pageHeight;
       const doc = new jsPDF();
       doc.addImage(canvas, "PNG", 0, position, imgWidth, imgHeight, "", "FAST");
@@ -49,7 +49,7 @@ function App() {
   // });
   return (
     <Box className="App">
-      <Button onClick={printDocument}>Print</Button>
+      <Button sx={{ backgroundColor: '#1D4294', color: '#CED2E6', position: 'absolute' }} onClick={printDocument}>Print</Button>
       <Box id="divToPrint" ref={inputRef}>
         <Box className="hero-section">
           <Header />
