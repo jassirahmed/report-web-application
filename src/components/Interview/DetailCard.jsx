@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
+import AllDetails from '../../JSON/AllDetails'
 
 export default function DetailCard() {
     return (
@@ -23,7 +24,7 @@ export default function DetailCard() {
                     <Box className='flex' sx={{ width: '100%', textAlign: 'left', paddingBottom: '10px' }}>
                         <Box className='flex' sx={{ fontSize: '14px', width: '35%' }}>
                             <Box sx={{ marginRight: '5px', color: '#130D3C' }}>Round: </Box>
-                            <Typography sx={{ fontSize: '14px', color: '#344CB6' }}>First Level Technical Interview</Typography>
+                            <Typography sx={{ fontSize: '14px', color: '#344CB6' }}>{AllDetails.round}</Typography>
                         </Box>
                         <Box sx={{ width: '21.66%', fontSize: '14px', color: '#130D3C' }}>
                             Date of interview
@@ -38,16 +39,16 @@ export default function DetailCard() {
                     <Box className='flex' sx={{ width: '100%', textAlign: 'left', paddingBottom: '10px' }}>
                         <Box className='flex' sx={{ fontSize: '14px', width: '35%' }}>
                             <Box sx={{ marginRight: '5px', color: '#130D3C' }}>Role Maturity: </Box>
-                            <Typography sx={{ fontSize: '14px', color: '#344CB6' }}>Experienced</Typography>
+                            <Typography sx={{ fontSize: '14px', color: '#344CB6' }}>{AllDetails.roleMaturity}</Typography>
                         </Box>
                         <Box sx={{ width: '21.66%', fontSize: '14px', color: '#344CB6' }}>
-                            Jun 28 , 2022
+                            {AllDetails.dateOfInterview}
                         </Box>
                         <Box sx={{ width: '21.66%', fontSize: '14px', color: '#344CB6' }}>
-                            11.00 am
+                            {AllDetails.timeOfInterview}
                         </Box>
                         <Box sx={{ width: '21.66%', fontSize: '14px', color: '#344CB6' }}>
-                            1 Hour
+                            {AllDetails.durationOfInterview}
                         </Box>
                     </Box>
                 </Box>
@@ -58,9 +59,9 @@ export default function DetailCard() {
                         <Box sx={{ width: '33.33%' }}>Type of interview</Box>
                     </Box>
                     <Box className='flex' sx={{ width: '100%', textAlign: 'left', fontSize: '14px', color: '#344CB6' }} >
-                        <Box sx={{ width: '33.33%' }}>Krishnan, HR</Box>
-                        <Box sx={{ width: '33.33%' }}>Zoom meeting</Box>
-                        <Box sx={{ width: '33.33%' }}>Online test</Box>
+                        <Box sx={{ width: '33.33%' }}>{AllDetails.interviewerName}</Box>
+                        <Box sx={{ width: '33.33%' }}>{AllDetails.modeOfinterview}</Box>
+                        <Box sx={{ width: '33.33%' }}>{AllDetails.typeOfinterview}</Box>
                     </Box>
                 </Box>
                 <Box sx={{ textAlign: 'left', color: '#777FAE', textTransform: 'capitalize', fontSize: '14px' }}>
