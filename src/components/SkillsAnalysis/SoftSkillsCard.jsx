@@ -1,40 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import InputRange from 'react-input-range'
+import AllDetails from '../../JSON/AllDetails'
 import './SkillsAnalysis.css'
 
-const SoftSkills = [
-    {
-        title: 'Project Knowledge',
-        value: 75,
-        marks: '6/8',
-        review: 'Good',
-    },
-    {
-        title: 'Android Feature',
-        value: 80,
-        marks: '8/10',
-        review: 'Excellent',
-    },
-    {
-        title: 'Kotlin',
-        value: 50,
-        marks: '4/8',
-        review: '2-5 Members',
-    },
-    {
-        title: 'Client Handling',
-        value: 50,
-        marks: '4/8',
-        review: 'Above Average',
-    },
-    {
-        title: 'Android Feature',
-        value: 66.6,
-        marks: '4/6',
-        review: 'Above Average',
-    }
-]
+const SoftSkills = AllDetails.softSkills;
 
 export default function SoftSkillsCard() {
     const handleChange = () => { }

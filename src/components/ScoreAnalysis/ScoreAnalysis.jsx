@@ -3,33 +3,8 @@ import { Box } from '@mui/material'
 import { Doughnut } from "react-chartjs-2";
 import { Chart, ArcElement } from "chart.js";
 import './ScoreAnalysis.css'
+import AllDetails from '../../JSON/AllDetails'
 
-Chart.register(ArcElement);
-
-const data = {
-    datasets: [
-        {
-            data: [3, 10, 10, 10, 10, 10, 10, 10, 10, 10],
-            backgroundColor: [
-                "#336699",
-                "#99CCFF",
-                "#999933",
-                "#666699",
-                "#CC9933",
-                "#006666",
-                "#3399FF",
-                "#993300",
-                "#CCCC99",
-                "#666666",
-                "#FFFFFF",
-                "#FFFFFF",
-                "#FFFFFF"
-            ],
-            display: true,
-            borderColor: "#D1D6DC"
-        }
-    ]
-};
 
 export default function ScoreAnalysis() {
     return (
@@ -39,10 +14,10 @@ export default function ScoreAnalysis() {
                     <Box width='30%' textAlign='left' color='#FFFFFF'>
                         <Box fontSize='40px' fontWeight='700' pb='25px'>Score Analysis</Box>
                         <Box width='300px' display='flex' flexWrap='wrap' fontSize='20px' fontWeight='500' lineHeight='40px' >
-                            Tamizharasan scored
-                            <Box pl='5px' fontWeight='700' color='#00B5A2'>80 %</Box>
+                            {AllDetails.personName} scored
+                            <Box pl='5px' fontWeight='700' color='#00B5A2'>{AllDetails.analysisScored}</Box>
                             and completed assessment in
-                            <Box pr='5px' fontWeight='700' color='#FEA303'>100 %</Box>
+                            <Box pr='5px' fontWeight='700' color='#FEA303'>{AllDetails.analysisCompleted}</Box>
                             of the allotted time
                         </Box>
                     </Box>

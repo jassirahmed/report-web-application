@@ -11,59 +11,9 @@ import {
     Legend,
     Label,
 } from "recharts";
+import AllDetails from '../../JSON/AllDetails'
 
-const data = [
-    {
-        name: "1/10",
-        uv: 5,
-        amt: 2400,
-    },
-    {
-        name: "2/10",
-        uv: 7,
-        amt: 2210,
-    },
-    {
-        name: "3/10",
-        uv: 12,
-        amt: 2290,
-    },
-    {
-        name: "4/10",
-        uv: 27,
-        amt: 2000,
-    },
-    {
-        name: "5/10",
-        uv: 20,
-        amt: 2181,
-    },
-    {
-        name: "6/10",
-        uv: 18,
-        amt: 2500,
-    },
-    {
-        name: "7/10",
-        uv: 16,
-        amt: 2100,
-    },
-    {
-        name: "8/10",
-        uv: 5,
-        amt: 2100,
-    },
-    {
-        name: "9/10",
-        uv: 1,
-        amt: 2100,
-    },
-    {
-        name: "10/10",
-        uv: 0,
-        amt: 2100,
-    },
-];
+const data = AllDetails.candidateChartData;
 export default function CandidateChart() {
     return (
         <Box>

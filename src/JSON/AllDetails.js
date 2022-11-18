@@ -19,6 +19,23 @@ const AllDetails = {
     clarity: 'Good',
     communication: 'Ok',
     confidence: 'Good',
+    feedBack: [
+        {
+            feedBacks: 'MVVM : candidate is very good in design patterns and he clearly demonstrated the MVVM using examples and the code coupling.'
+        },
+        {
+            feedBacks: 'ANR: very well known to the problem and knows the methods to rectify it.services understands the foreground services and looper services in - depth and also well versed in communication data between services and activities.Multithreading : good in managing multiple threads and knows when to use them.'
+        },
+        {
+            feedBacks: 'system design and project knowledge is very good and he very well knows about the data flow from start to end for each of the user in his current project.'
+        },
+        {
+            feedBacks: 'He is good in creating test cases, good experience in CI / CD pipelines. He has more than 4 years of experience in kotlin.'
+        },
+        {
+            feedBacks: ' Coding Question And Feedback good in programming and he wrote the code quickly for some problem statement which clarifying his standard of programming. Overall the candidate was good and very knowledgeable . he is very good to have as per the JD mentioned. so recommended .'
+        },
+    ],
     candidateChartData: [
         {
             name: "1/10",
@@ -129,6 +146,8 @@ const AllDetails = {
         marks: '8/10',
         review: 'Good',
     }],
+    techSkillsTotalMarks: '52',
+    techSkillsGrade: 'Very Good',
     softSkills: [{
         title: 'Project Knowledge',
         value: 75,
@@ -159,22 +178,24 @@ const AllDetails = {
         marks: '4/6',
         review: 'Above Average',
     }],
-    answerImages: [
+    softSkillsTotalMarks: '28',
+    softSkillsGrade: 'Good',
+    answerData: [
         {
             questions: 'Q #1) Write a function that will request for names and ages using promise factory and then will join them by index to display name and age respective index from an array',
-            answer: '/public/images/answers.png',
+            answer: '/images/answers.png',
             result: 'Right',
             time: '20 min / 10 sec'
         },
         {
             questions: 'Q #2) How to get the matching characters in a string?',
-            answer: '/public/images/answers.png',
+            answer: '/images/answers.png',
             result: 'Right',
             time: '20 min / 10 sec'
         },
         {
             questions: 'Q #3) How to calculate the number of numerical digits in a string?',
-            answer: '/public/images/answers.png',
+            answer: '/images/answers.png',
             result: 'Right',
             time: '20 min / 10 sec'
         }

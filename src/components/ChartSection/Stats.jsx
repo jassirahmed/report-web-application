@@ -1,28 +1,10 @@
 import { Box, Card, Typography } from "@mui/material";
 import CandidateChart from "../Charts/CandidateChart";
 import React from "react";
+import AllDetails from "../../JSON/AllDetails";
 // import CandidateChart from "../Charts/CandidateChart";
 export default function Stats() {
-  const StatsData = [
-    {
-      percentage: "99%",
-      color: "#c910f5",
-      prior: "Lesser",
-      comparison: "than",
-    },
-    {
-      percentage: "1%",
-      color: "#dfbf23",
-      prior: "same",
-      comparison: "as",
-    },
-    {
-      percentage: "0%",
-      color: "#e947c6",
-      prior: "Higher",
-      comparison: "than",
-    },
-  ];
+  const StatsData = AllDetails.statsData;
   return (
     <Box bgcolor={"#fff"} p={"50px"}>
       <Box textAlign={"left"}>
@@ -39,7 +21,6 @@ export default function Stats() {
             <Box
               display={"flex"}
               alignItems={"center"}
-            //   justifyContent={"center"}
             >
               {StatsData.map((item, i) => (
                 <Box
@@ -63,7 +44,7 @@ export default function Stats() {
                     <Box as={"span"} color={"cyan"}>
                       {item.prior}
                     </Box>
-                    <br /> Rating {item.comparison} <br /> Thamiz Arasam
+                    <br /> Rating {item.comparison} <br /> {AllDetails.personName}
                   </Box>
                 </Box>
               ))}

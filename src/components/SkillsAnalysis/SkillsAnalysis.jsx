@@ -4,6 +4,7 @@ import BetterThanIcon from '../Icons/BetterThanIcon'
 import "./SkillsAnalysis.css"
 import TechSkillsCard from './TechSkillsCard'
 import SoftSkillsCard from './SoftSkillsCard'
+import AllDetails from '../../JSON/AllDetails'
 
 
 export default function SkillsAnalysis() {
@@ -31,12 +32,12 @@ export default function SkillsAnalysis() {
                             fontWeight: 600,
                         }}
                     >
-                        52/
+                        {AllDetails.techSkillsTotalMarks}/
                         <Box sx={{ color: '#130D3C' }}>
                             60
                         </Box>
                     </Box>
-                    <Box sx={{ color: '#00B5A2', fontSize: "12px" }}>Very Good</Box>
+                    <Box sx={{ color: '#00B5A2', fontSize: "12px" }}>{AllDetails.techSkillsGrade}</Box>
                 </Box>
                 <Box sx={{ width: '35%', }}>
                     <Box sx={{ width: '80px', marginLeft: 'auto', textAlign: 'left' }}>
@@ -49,7 +50,7 @@ export default function SkillsAnalysis() {
                             pb: '10px',
                         }}
                         >
-                            86%
+                            {AllDetails.betterThan}
                         </Box>
                         <Box sx={{ color: '#130D3C', fontSize: "12px" }}>of developers</Box>
                     </Box>
@@ -77,12 +78,12 @@ export default function SkillsAnalysis() {
                             fontWeight: 600,
                         }}
                     >
-                        28/
+                        {AllDetails.softSkillsTotalMarks}/
                         <Box sx={{ color: '#130D3C' }}>
                             40
                         </Box>
                     </Box>
-                    <Box sx={{ color: '#00B5A2', fontSize: "12px" }}>Good</Box>
+                    <Box sx={{ color: '#00B5A2', fontSize: "12px" }}>{AllDetails.softSkillsGrade}</Box>
                 </Box>
                 <Box sx={{ width: '35%', }}>
                     <Box sx={{ width: '80px', marginLeft: 'auto', textAlign: 'left' }}>
@@ -95,7 +96,7 @@ export default function SkillsAnalysis() {
                             pb: '10px',
                         }}
                         >
-                            86%
+                            {AllDetails.betterThan}
                         </Box>
                         <Box sx={{ color: '#130D3C', fontSize: "12px" }}>of developers</Box>
                     </Box>

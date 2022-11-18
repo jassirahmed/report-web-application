@@ -1,46 +1,10 @@
 import React from 'react'
 import { Box } from '@mui/material'
 import InputRange from 'react-input-range'
+import AllDetails from '../../JSON/AllDetails'
 import './SkillsAnalysis.css'
 
-const TechnicalSkills = [
-    {
-        title: 'MVVM Architecture',
-        value: 80,
-        marks: '9/10',
-        review: 'Excellent',
-    },
-    {
-        title: 'Android Feature',
-        value: 100,
-        marks: '12/12',
-        review: 'Excellent',
-    },
-    {
-        title: 'Kotlin',
-        value: 80,
-        marks: '8/10',
-        review: 'Good',
-    },
-    {
-        title: 'Design Pattern',
-        value: 90,
-        marks: '9/10',
-        review: 'Excellent',
-    },
-    {
-        title: 'Guard Rails ( Linting Tools , SONAR)',
-        value: 75,
-        marks: '6/10',
-        review: 'Good',
-    },
-    {
-        title: 'Unti Test ( Junit , E2e , Test )',
-        value: 80,
-        marks: '8/10',
-        review: 'Good',
-    }
-]
+const TechnicalSkills = AllDetails.technicalSkills;
 
 export default function TechSkillsCard() {
     const handleChange = () => { }
